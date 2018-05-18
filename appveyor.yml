@@ -20,7 +20,7 @@ build_script:
 - cmd: |
     dotnet test Meridian.MeaningfulToString\Meridian.MeaningfulToString.Tests\Meridian.MeaningfulToString.Tests.csproj
     dotnet publish Meridian.MeaningfulToString\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
-    copy %APPVEYOR_BUILD_FOLDER%\LICENSE.md %APPVEYOR_BUILD_FOLDER%\Meridian.MeaningfulToString\Meridian.MeaningfulToString\bin\Release\netstandard2.0\Meridian.InterSproc-LICENSE.txt
+    copy %APPVEYOR_BUILD_FOLDER%\LICENSE.md %APPVEYOR_BUILD_FOLDER%\Meridian.MeaningfulToString\Meridian.MeaningfulToString\bin\Release\netstandard2.0\Meridian.MeaningfulToString-LICENSE.txt
     7z a Meridian.MeaningfulToString.zip %APPVEYOR_BUILD_FOLDER%\Meridian.MeaningfulToString\Meridian.MeaningfulToString\bin\Release\netstandard2.0\*.*
     dotnet pack Meridian.MeaningfulToString\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
 
