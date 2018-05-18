@@ -12,10 +12,11 @@ Meaningful `ToString()` creates a string that looks something like:
 And this is all that Meaningful `ToString()` does!
 
 ## Requirements
-Meaningful `ToString()` can be used in the following environments:
+Meaningful `ToString()` is a .NET Standard 1.0 library, and can be used in the
+following .NET environments:
 
-- dotnet Core (CoreCLR) 2 projects;
-- full-fat .NET framework, v4.6.1 and beyond
+- dotnet Core (CoreCLR) projects (versions 1 and up);
+- full-fat .NET framework, v4.5 and beyond
 
 ## Quick Start Guide
 1. **Include the NuGet package:**
@@ -40,13 +41,19 @@ Meaningful `ToString()` can be used in the following environments:
    }
    ```
    
-   - **Note 1:** You can have multiple base classes - just as long as ultimately, the class you want meaningful values for `ToString()` inherits from `MeaningfulBase`.
-   - **Note 2:** This is actually not 100% required; this is just the quick start. If you'd rather *not* inherit all your classes from this base class, see below section "Without Inheriting from `MeaningfulBase`".
+   - **Note 1:** You can have multiple base classes - just as long as
+     ultimately, the class you want meaningful values for `ToString()` inherits
+     from `MeaningfulBase`.
+   - **Note 2:** This is actually not 100% required; this is just the quick
+     start. If you'd rather *not* inherit all your classes from this base
+     class, see below section "Without Inheriting from `MeaningfulBase`".
    
   3. **That's it! Start debugging/logging!**
   
 ## Without Inheriting from `MeaningfulBase`
-You don't have to inherit from `MeaningfulBase` if you don't want to. Simply `override` your class' implementation of `ToString()`, and call the object extension method `MeaningfulToString()`:
+You don't have to inherit from `MeaningfulBase` if you don't want to. Simply
+`override` your class' implementation of `ToString()`, and call the object
+extension method `MeaningfulToString()`:
 
 ```
 public override string ToString()
@@ -55,6 +62,7 @@ public override string ToString()
 }
 ```
 
-As with all extension methods, just remember to make sure to include the `Meridian.MeaningfulToString` namespace in your `usings`:
+As with all extension methods, just remember to make sure to include the
+`Meridian.MeaningfulToString` namespace in your `usings`:
 
 `using Meridian.MeaningfulToString;`
