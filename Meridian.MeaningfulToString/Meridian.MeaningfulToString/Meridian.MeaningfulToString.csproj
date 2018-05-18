@@ -7,6 +7,13 @@
   <PropertyGroup>
     <!-- Required in both test/product projects. This is a temporary workaround for https://github.com/Microsoft/vstest/issues/800 -->
     <DebugType>Full</DebugType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.0</Version>
+    <Authors>MTCS (Matt Middleton)</Authors>
+    <Product>Meridian Meaningful ToString()</Product>
+    <Description>Meaningful ToString() is an extremely lightweight class library that helps describe your instances in a more meaningful way.</Description>
+    <Copyright>Copyright (c) MTCS 2018. MTCS is a trading name of Meridian Technology Consultancy Services Ltd. Meridian Technology Consultancy Services Ltd is registered in England and Wales. Company number: 11184022.</Copyright>
+    <PackageTags>tostring debug logging</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
