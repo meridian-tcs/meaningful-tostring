@@ -1,4 +1,6 @@
-﻿namespace Meridian.MeaningfulToString.Tests.Model
+﻿using System.Collections.Generic;
+
+namespace Meridian.MeaningfulToString.Tests.Model
 {
     public class Employee : MeaningfulBase
     {
@@ -26,7 +28,7 @@
             set;
         }
 
-        public string Email
+        public IEnumerable<string> Emails
         {
             get;
             set;

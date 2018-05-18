@@ -7,7 +7,7 @@ namespace Meridian.MeaningfulToString.Tests
     public class MeaningfulBaseTests
     {
         [TestMethod]
-        public void ToString_SomethingSomething()
+        public void ToString_ProduceMeaningfulToString_EnsureOutputIsCorrect()
         {
             // Arrange
             Employee joe = new Employee()
@@ -16,7 +16,11 @@ namespace Meridian.MeaningfulToString.Tests
                 Title = "Managing Director",
                 FirstName = "Joe",
                 LastName = "Bloggs",
-                Email = "joe.bloggs@somecorp.local",
+                Emails = new string[]
+                {
+                    "joe.bloggs@somecorp.local",
+                    "joeb1281@hotmail.co.uk"
+                },
                 Manager = null,
             };
 
@@ -26,16 +30,36 @@ namespace Meridian.MeaningfulToString.Tests
                 Title = "Head of Sales",
                 FirstName = "Fred",
                 LastName = "Smith",
-                Email = "fred.smith@somecorp.local",
+                Emails = new string[] {
+                    "fred.smith@somecorp.local"
+                },
                 Manager = joe,
             };
 
-            string result = null;
+            string expectedToStringValue =
+                "Employee (" +
+                "Id = 13298279, " +
+                "Title = Head of Sales, " +
+                "FirstName = Fred, " +
+                "LastName = Smith, " +
+                "Emails = System.String[], " +
+                "Manager = " +
+                    "Employee (" +
+                    "Id = 13298278, " +
+                    "Title = Managing Director, " +
+                    "FirstName = Joe, " +
+                    "LastName = Bloggs, " +
+                    "Emails = System.String[], " +
+                    "Manager = null" +
+                    ")" +
+                ")";
+            string actualToStringValue = null;
 
             // Act
-            result = fred.ToString();
+            actualToStringValue = fred.ToString();
 
             // Assert
+            Assert.AreEqual(expectedToStringValue, actualToStringValue);
         }
     }
 }
