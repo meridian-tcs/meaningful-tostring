@@ -1,0 +1,32 @@
+# -----------------------------------------------------------------------------
+# <copyright file="appveyor.yml" company="MTCS">
+# Copyright (c) MTCS 2018.
+# MTCS is a trading name of Meridian Technology Consultancy Services Ltd.
+# Meridian Technology Consultancy Services Ltd is registered in England and
+# Wales. Company number: 11184022.
+# </copyright>
+# -----------------------------------------------------------------------------
+
+# Configuration
+configuration: release
+
+# Only master branch
+branches:
+  only:
+  - master
+
+# Build script
+build_script:
+- cmd: |
+    dotnet test Meridian.MeaningfulToString\Meridian.MeaningfulToString.Tests\Meridian.MeaningfulToString.Tests.csproj
+    dotnet publish Meridian.MeaningfulToString\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
+    copy %APPVEYOR_BUILD_FOLDER%\LICENSE.md %APPVEYOR_BUILD_FOLDER%\Meridian.MeaningfulToString\Meridian.MeaningfulToString\bin\Release\netstandard2.0\Meridian.InterSproc-LICENSE.txt
+    7z a Meridian.MeaningfulToString.zip %APPVEYOR_BUILD_FOLDER%\Meridian.MeaningfulToString\Meridian.MeaningfulToString\bin\Release\netstandard2.0\*.*
+    dotnet pack Meridian.MeaningfulToString\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
+
+# Artifact Config
+artifacts:
+  - path: "*.nupkg"
+    name: Meridian.MeaningfulToString NuGet Package
+  - path: Meridian.MeaningfulToString.zip
+    name: "Meridian.MeaningfulToString Binaries"

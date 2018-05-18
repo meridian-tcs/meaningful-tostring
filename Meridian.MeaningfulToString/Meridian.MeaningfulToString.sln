@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meridian.MeaningfulToString
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{928CA35D-3222-4B0A-8361-58E1EBFD80EC}"
 	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
 		..\LICENSE.md = ..\LICENSE.md
 		stylecop.json = stylecop.json
 	EndProjectSection
