@@ -1,11 +1,35 @@
-﻿namespace Meridian.MeaningfulToString
+﻿// ----------------------------------------------------------------------------
+// <copyright file="ObjectExtensions.cs" company="MTCS">
+// Copyright (c) MTCS 2018.
+// MTCS is a trading name of Meridian Technology Consultancy Services Ltd.
+// Meridian Technology Consultancy Services Ltd is registered in England and
+// Wales. Company number: 11184022.
+// </copyright>
+// ----------------------------------------------------------------------------
+
+namespace Meridian.MeaningfulToString
 {
     using System;
     using System.Linq;
     using System.Reflection;
 
+    /// <summary>
+    /// Static class containing extension methods for the <see cref="object" />
+    /// class.
+    /// </summary>
     public static class ObjectExtensions
     {
+        /// <summary>
+        /// Provides a meaningful description of the instance passed in via
+        /// <paramref name="sender" />.
+        /// </summary>
+        /// <param name="sender">
+        /// An instance of a class in which to produce a meaningful
+        /// description for.
+        /// </param>
+        /// <returns>
+        /// A <see cref="string" /> value.
+        /// </returns>
         public static string MeaningfulToString(this object sender)
         {
             string toReturn = null;
