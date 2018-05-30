@@ -8,7 +8,7 @@
     <!-- Required in both test/product projects. This is a temporary workaround for https://github.com/Microsoft/vstest/issues/800 -->
     <DebugType>Full</DebugType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>MTCS (Matt Middleton)</Authors>
     <Product>Meridian Meaningful ToString()</Product>
     <Description>Meaningful ToString() is an extremely lightweight .NET class library that helps describe your instances in a more meaningful way.</Description>

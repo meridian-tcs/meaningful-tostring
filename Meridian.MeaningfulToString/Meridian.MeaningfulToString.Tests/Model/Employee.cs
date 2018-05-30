@@ -2,14 +2,8 @@
 
 namespace Meridian.MeaningfulToString.Tests.Model
 {
-    public class Employee : MeaningfulBase
+    public class Employee : DatabaseEntity<long>
     {
-        public int Id
-        {
-            get;
-            set;
-        }
-
         public string Title
         {
             get;
