@@ -28,17 +28,33 @@ namespace Meridian.MeaningfulToString
         /// An instance of a class in which to produce a meaningful
         /// description for.
         /// </param>
+        /// <param name="includeBaseProperties">
+        /// If true, will include descriptions of properties from all
+        /// underlying base classes in the result.
+        /// An optional parameter, defaulted to true.
+        /// </param>
         /// <returns>
         /// A <see cref="string" /> value.
         /// </returns>
-        public static string MeaningfulToString(this object sender)
+        public static string MeaningfulToString(
+            this object sender,
+            bool includeBaseProperties = true)
         {
             string toReturn = null;
 
             Type type = sender.GetType();
 
-            IEnumerable<PropertyInfo> propertyInfo =
-                type.GetTypeInfo().DeclaredProperties;
+            TypeInfo typeInfo = type.GetTypeInfo();
+
+            IEnumerable<PropertyInfo> propertyInfo = null;
+            if (includeBaseProperties)
+            {
+                propertyInfo = typeInfo.GetAllProperties();
+            }
+            else
+            {
+                propertyInfo = typeInfo.DeclaredProperties;
+            }
 
             string[] propertyDescs = propertyInfo
                 .Select(x =>

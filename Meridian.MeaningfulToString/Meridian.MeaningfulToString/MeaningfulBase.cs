@@ -12,7 +12,7 @@ namespace Meridian.MeaningfulToString
     /// <summary>
     /// This class automatically overrides the <see cref="object.ToString()" />
     /// method with the
-    /// <see cref="ObjectExtensions.MeaningfulToString(object)" />
+    /// <see cref="ObjectExtensions.MeaningfulToString(object, bool)" />
     /// implementation.
     /// </summary>
     public abstract class MeaningfulBase
