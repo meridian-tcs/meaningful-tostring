@@ -38,20 +38,19 @@ namespace Meridian.MeaningfulToString.Tests
 
             string expectedToStringValue =
                 "Employee (" +
-                "Id = 13298279, " +
-                "Title = Head of Sales, " +
-                "FirstName = Fred, " +
-                "LastName = Smith, " +
-                "Emails = System.String[], " +
-                "Manager = " +
-                    "Employee (" +
-                    "Id = 13298278, " +
+                    "Title = Head of Sales, " +
+                    "FirstName = Fred, " +
+                    "LastName = Smith, " +
+                    "Emails = System.String[], " +
+                    "Manager = Employee (" +
                     "Title = Managing Director, " +
                     "FirstName = Joe, " +
                     "LastName = Bloggs, " +
                     "Emails = System.String[], " +
-                    "Manager = null" +
-                    ")" +
+                    "Manager = null, " +
+                    "Id = 13298278" +
+                    "), " +
+                "Id = 13298279" +
                 ")";
             string actualToStringValue = null;
 
@@ -94,21 +93,20 @@ namespace Meridian.MeaningfulToString.Tests
             };
             string expectedToStringValue =
                 "SoftwareDeveloper (" +
-                "Speciality = Java, " +
-                "Id = 13298329, " +
-                "Title = Senior Software Developer, " +
-                "FirstName = Phillip, " +
-                "LastName = Jeffries, " +
-                "Emails = System.String[], " +
-                "Manager = " +
-                    "Employee (" +
-                    "Id = 13298278, " +
+                    "Speciality = Java, " +
+                    "Title = Senior Software Developer, " +
+                    "FirstName = Phillip, " +
+                    "LastName = Jeffries, " +
+                    "Emails = System.String[], " +
+                    "Manager = Employee (" +
                     "Title = Managing Director, " +
                     "FirstName = Joe, " +
                     "LastName = Bloggs, " +
                     "Emails = System.String[], " +
-                    "Manager = null" +
-                    ")" +
+                    "Manager = null, " +
+                    "Id = 13298278" +
+                "), " +
+                "Id = 13298329" +
                 ")";
             string actualToStringValue = null;
 
