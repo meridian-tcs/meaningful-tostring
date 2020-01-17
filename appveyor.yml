@@ -30,9 +30,3 @@ artifacts:
     name: Meridian.MeaningfulToString NuGet Package
   - path: Meridian.MeaningfulToString.zip
     name: "Meridian.MeaningfulToString Binaries"
-
-# Deployment Config
-deploy:
-  provider: NuGet
-  api_key:
-    secure: uBxixailIFjrEGsZwUcb9lT+MCbYRl6CuPh0gSB/5FLAlGgz1N0RRAYTCOgFu/3m
