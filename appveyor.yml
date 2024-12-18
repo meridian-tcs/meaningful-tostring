@@ -13,11 +13,9 @@ configuration: release
 # Linux
 image: Ubuntu
 
-# Commit test.
 # Build script
 build_script:
 - sh: |
-    sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
     dotnet test src\Meridian.MeaningfulToString.Tests\Meridian.MeaningfulToString.Tests.csproj
     dotnet pack src\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
 
