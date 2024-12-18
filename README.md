@@ -1,5 +1,5 @@
 # Meaningful `ToString()`
-[![Build Status Badge](https://ci.appveyor.com/api/projects/status/v01tvsrcdqo9w63w?svg=true)](https://ci.appveyor.com/project/mmiddleton3301/meaningful-tostring) [![Downloads Badge](https://img.shields.io/nuget/dt/Meridian.MeaningfulToString.svg)](https://www.nuget.org/packages/Meridian.MeaningfulToString) [![Version Badge](https://img.shields.io/nuget/v/Meridian.MeaningfulToString.svg)](https://www.nuget.org/packages/Meridian.MeaningfulToString)
+[![Build status](https://ci.appveyor.com/api/projects/status/6xjfn5an6xsl28of/branch/master?svg=true)](https://ci.appveyor.com/project/mmiddleton3301/meaningful-tostring/branch/master) [![Downloads Badge](https://img.shields.io/nuget/dt/Meridian.MeaningfulToString.svg)](https://www.nuget.org/packages/Meridian.MeaningfulToString) [![Version Badge](https://img.shields.io/nuget/v/Meridian.MeaningfulToString.svg)](https://www.nuget.org/packages/Meridian.MeaningfulToString)
 
 Meaningful `ToString()` is an extremely lightweight .NET class library that
 helps describe your instances in a more meaningful way.
@@ -11,14 +11,7 @@ Meaningful `ToString()` creates a string that looks something like:
 
 And this is all that Meaningful `ToString()` does!
 
-## Requirements
-Meaningful `ToString()` is a .NET Standard 1.0 library, and can be used in the
-following .NET environments:
-
-- dotnet Core (CoreCLR) projects (versions 1 and up);
-- full-fat .NET framework, v4.5 and beyond
-
-## Quick Start Guide
+## Quick-start guide 🚀
 1. **Include the NuGet package:**
    
    `Install-Package Meridian.MeaningfulToString`

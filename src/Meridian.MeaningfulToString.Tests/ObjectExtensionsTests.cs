@@ -1,5 +1,6 @@
 ﻿namespace Meridian.MeaningfulToString.Tests
 {
+    using Meridian.MeaningfulToString.Extensions;
     using Meridian.MeaningfulToString.Tests.Model;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
