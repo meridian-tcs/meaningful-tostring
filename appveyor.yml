@@ -16,8 +16,8 @@ image: Ubuntu
 # Build script
 build_script:
 - sh: |
-    dotnet test src\Meridian.MeaningfulToString.Tests\Meridian.MeaningfulToString.Tests.csproj
-    dotnet pack src\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
+    dotnet test src/Meridian.MeaningfulToString.Tests/Meridian.MeaningfulToString.Tests.csproj
+    dotnet pack src/Meridian.MeaningfulToString/Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
 
 # Artifact Config
 artifacts:
