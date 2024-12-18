@@ -9,11 +9,6 @@
 
 # Configuration
 configuration: release
-
-# Only master branch
-branches:
-  only:
-  - master
   
 # Linux
 image: Ubuntu
