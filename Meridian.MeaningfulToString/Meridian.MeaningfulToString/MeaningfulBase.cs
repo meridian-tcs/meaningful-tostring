@@ -9,6 +9,8 @@
 
 namespace Meridian.MeaningfulToString
 {
+    using Meridian.MeaningfulToString.Extensions;
+
     /// <summary>
     /// This class automatically overrides the <see cref="object.ToString()" />
     /// method with the

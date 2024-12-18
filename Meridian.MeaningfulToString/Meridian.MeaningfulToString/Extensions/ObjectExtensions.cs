@@ -7,7 +7,7 @@
 // </copyright>
 // ----------------------------------------------------------------------------
 
-namespace Meridian.MeaningfulToString
+namespace Meridian.MeaningfulToString.Extensions
 {
     using System;
     using System.Collections.Generic;

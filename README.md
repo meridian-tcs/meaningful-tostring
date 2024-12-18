@@ -11,14 +11,7 @@ Meaningful `ToString()` creates a string that looks something like:
 
 And this is all that Meaningful `ToString()` does!
 
-## Requirements
-Meaningful `ToString()` is a .NET Standard 1.0 library, and can be used in the
-following .NET environments:
-
-- dotnet Core (CoreCLR) projects (versions 1 and up);
-- full-fat .NET framework, v4.5 and beyond
-
-## Quick Start Guide
+## Quick-start guide 🚀
 1. **Include the NuGet package:**
    
    `Install-Package Meridian.MeaningfulToString`
