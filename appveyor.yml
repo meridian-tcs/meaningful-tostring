@@ -13,6 +13,7 @@ configuration: release
 # Linux
 image: Ubuntu
 
+# Commit test.
 # Build script
 build_script:
 - sh: |
