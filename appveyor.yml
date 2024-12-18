@@ -15,7 +15,7 @@ image: Visual Studio 2022
 
 # Build script
 build_script:
-- sh: |
+- cmd: |
     dotnet test src\Meridian.MeaningfulToString.Tests\Meridian.MeaningfulToString.Tests.csproj
     dotnet pack src\Meridian.MeaningfulToString\Meridian.MeaningfulToString.csproj --output %APPVEYOR_BUILD_FOLDER%
 
