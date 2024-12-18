@@ -13,10 +13,10 @@
 		<Description>Meaningful ToString() is an extremely lightweight .NET class library that helps describe your instances in a more meaningful way.</Description>
 		<Copyright>Copyright (c) MTCS 2024. MTCS is a trading name of Meridian Technology Consultancy Services Ltd. Meridian Technology Consultancy Services Ltd is registered in England and Wales. Company number: 11184022.</Copyright>
 		<PackageTags>tostring debug logging</PackageTags>
-		<PackageLicenseUrl>https://github.com/meridian-tcs/meaningful-tostring/blob/master/LICENSE.md</PackageLicenseUrl>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageProjectUrl>https://github.com/meridian-tcs/meaningful-tostring</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/meridian-tcs/meaningful-tostring</RepositoryUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/meridian-tcs/meaningful-tostring/master/String-64.png</PackageIconUrl>
+		<PackageIcon>String-64.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -28,6 +28,11 @@
 
 	<ItemGroup>
 		<AdditionalFiles Include="..\stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="..\..\String-64.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>

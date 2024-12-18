@@ -1,6 +1,6 @@
 ﻿// ----------------------------------------------------------------------------
 // <copyright file="ObjectExtensions.cs" company="MTCS">
-// Copyright (c) MTCS 2018.
+// Copyright (c) MTCS 2024.
 // MTCS is a trading name of Meridian Technology Consultancy Services Ltd.
 // Meridian Technology Consultancy Services Ltd is registered in England and
 // Wales. Company number: 11184022.
